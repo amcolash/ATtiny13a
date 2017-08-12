@@ -19,6 +19,7 @@ int main(void) {
 	for (;;){}
 	return 0;
 }
+
 ISR (PCINT0_vect) // Interrupt Service Routine, performed when the interrupt is triggered. Always PCINT0_vect even if using PCINT1 or PCINT2.
 {
 	PORTB ^= 1<<PB4;
